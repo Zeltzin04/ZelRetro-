@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZelRetro</title>
+<link rel="shortcut icon" href="/Logo_final-removebg-preview.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Zel<span>Retro</span></h1>
+            <p>Tu armario sostenible</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="/categoria.html" class="nav-link">Categorías</a></li>
+                <li><a href="/donaciones.html" class="nav-link">Donar/Vender</a></li>
+                <li><a href="/opiniones.html" class="nav-link">Opiniones</a></li>
+                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>ZelRetro</h3>
+            <button class="close-menu-btn">&times;</button>
+        </div>
+        <ul>
+            <li><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li><a href="/categoria.html" class="nav-link">Categorías</a></li>
+            <li><a href="/donaciones.html" class="nav-link">Donar/Vender</a></li>
+            <li><a href="/opiniones.html" class="nav-link">Opiniones</a></li>
+            <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Redescubre <span>el estilo</span></h2>
+                <p class="hero-subtitle">Ropa de segunda mano en perfecto estado a precios increíbles</p>
+                <div class="hero-buttons">
+                    <a href="/categoria.html" class="btn btn-primary">Explorar</a>
+                    <a href="/donaciones.html" class="btn btn-secondary">Donar ropa</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Moda sostenible">
+            </div>
+            <div class="hero-scroll-down">
+                <span>Desliza</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stat-item">
+                <h3 data-count="2500">0</h3>
+                <p>Prendas disponibles</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="1200">0</h3>
+                <p>Clientes satisfechos</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="350">0</h3>
+                <p>Donaciones mensuales</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-count="95">0</h3>
+                <p>% de satisfacción</p>
+            </div>
+        </section>
+
+     
+
+        <!-- Featured Banner -->
+        <section class="featured-banner">
+            <div class="banner-content">
+                <h3>¡Únete a la moda circular!</h3>
+                <p>Compra, vende o dona ropa en perfecto estado y ayuda al planeta</p>
+                <a href="/donaciones.html" class="btn btn-white">Saber más</a>
+            </div>
+        </section>
+
+       
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h3>Suscríbete a nuestro newsletter</h3>
+                <p>Recibe ofertas exclusivas, novedades y consejos de moda sostenible</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-white">Suscribirme</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

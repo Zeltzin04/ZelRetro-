@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZelRetro</title>
+    <link rel="shortcut icon" href="/Logo_final-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Zel<span>Retro</span></h1>
+            <p>Tu armario sostenible</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="/categoria.html" class="nav-link">Categorías</a></li>
+                <li><a href="/donaciones.html" class="nav-link">Donar/Vender</a></li>
+                <li><a href="/opiniones.html" class="nav-link">Opiniones</a></li>
+                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+    
+        <!-- Testimonials Section -->
+        <section id="opiniones" class="testimonials">
+            <div class="section-header">
+                <h2 class="section-title">Opiniones de <span>Clientes</span></h2>
+                <p class="section-subtitle">Lo que dicen quienes han comprado, vendido o donado con nosotros</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="María G.">
+                        </div>
+                        <div class="client-info">
+                            <h4>María G.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Encontré un vestido de fiesta de diseñador casi nuevo a una fracción del precio original. El proceso de compra fue muy sencillo y la prenda llegó en perfectas condiciones, tal como se describía."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos M.">
+                        </div>
+                        <div class="client-info">
+                            <h4>Carlos M.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Vendí varias prendas que ya no usaba y el proceso fue muy transparente. Recibí mi pago rápidamente y la comunicación con el equipo fue excelente en todo momento."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana L.">
+                        </div>
+                        <div class="client-info">
+                            <h4>Ana L.</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Doné ropa de mis hijos que ya no usaban y me encantó saber que iría a familias necesitadas. El servicio de recogida fue puntual y muy profesional. ¡Volveré a donar pronto!"</p>
+                </div>
+            </div>
+
+            <div class="add-review">
+                <h3>Cuéntanos tu experiencia</h3>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label for="review-name">Nombre</label>
+                        <input type="text" id="review-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Calificación</label>
+                        <div class="rating">
+                            <div class="stars-input">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                            <input type="hidden" id="rating-value" value="0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Tu opinión</label>
+                        <textarea id="review-text" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar opinión</button>
+                </form>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

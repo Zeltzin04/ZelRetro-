@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZelRetro - Tu armario sostenible</title>
+
+<link rel="shortcut icon" href="/Logo_final-removebg-preview.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+     <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Zel<span>Retro</span></h1>
+            <p>Tu armario sostenible</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="/categoria.html" class="nav-link">Categorías</a></li>
+                <li><a href="/donaciones.html" class="nav-link">Donar/Vender</a></li>
+                <li><a href="/opiniones.html" class="nav-link">Opiniones</a></li>
+                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>ReStyle</h3>
+            <button class="close-menu-btn">&times;</button>
+        </div>
+        <ul>
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#categorias" class="nav-link">Categorías</a></li>
+            <li><a href="#donaciones" class="nav-link">Donar/Vender</a></li>
+            <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+ <!-- Donations Section -->
+        <section id="donaciones" class="donations">
+            <div class="section-header">
+                <h2 class="section-title">Donar <span>o Vender</span></h2>
+                <p class="section-subtitle">Dale una segunda vida a tu ropa y ayuda a reducir el desperdicio textil</p>
+            </div>
+            <div class="donation-content">
+                <div class="donation-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Donaciones</h3>
+                        <p>Recibimos ropa en buen estado para donar a familias necesitadas o vender en nuestra plataforma con fines benéficos.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Ventas</h3>
+                        <p>¿Tienes prendas de calidad que ya no usas? Te ayudamos a venderlas y obtienes un porcentaje de las ventas.</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Contáctanos</h4>
+                        <p><i class="fas fa-phone-alt"></i> 278 125 1945</p>
+                        <p><i class="fas fa-envelope"></i> cuatrazel@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Tolapa Tequila Veracruz</p>
+                    </div>
+                </div>
+                <div class="donation-form">
+                    <h3>¿Qué deseas hacer?</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="option">Selecciona una opción</label>
+                            <select id="option" required>
+                                <option value="">-- Selecciona --</option>
+                                <option value="donacion">Quiero donar ropa</option>
+                                <option value="venta">Quiero vender ropa</option>
+                                <option value="consulta">Tengo una consulta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
